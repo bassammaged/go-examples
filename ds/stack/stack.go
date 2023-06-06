@@ -16,3 +16,8 @@ func (rs *RandomStack) Pop() (item interface{}) {
 	rs.items = rs.items[:length]
 	return toRemove
 }
+
+// Top() return the last item in the stack
+func (rs RandomStack) Top() (item interface{}) {
+	return rs.items[len(rs.items)-1]
+}
